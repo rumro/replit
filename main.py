@@ -12,7 +12,7 @@ import logging
 app = Flask(__name__)
 
 # Устанавливаем уровень логирования
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, filename='example.log')
 
 # Создадим словарь, чтобы для каждой сессии общения 
 # с навыком хранились подсказки, которые видел пользователь.
